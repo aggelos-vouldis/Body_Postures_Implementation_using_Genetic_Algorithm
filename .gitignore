@@ -152,8 +152,8 @@ cython_debug/
 #.idea/
 
 # ignore all irrelevant folders
-something
-GA example
+test
+test_ga
 .vscode
 __pycache__
 
