@@ -1,18 +1,32 @@
 import pandas as pd
 from sklearn.preprocessing import QuantileTransformer
+from Point import TargetPoints, Point
 
-# This file reads all info from the dataset.csv file and uses the QuantileTransformer on them
-# as I did on the last exercise.
-# Later it calculates the mean value and transforms the result into a bit array of 1's and 0's
 
-# The last transformation is done by truncating each average value to 10 decimals
-# and then converting each number (after the comma) to binary format
-# lastly add zeros to the start of each binary number so that the length equals 4 (so that each number has the same length)
-#
-# ex: Sensor Value: 0.4959 --> Decimal Value:  0    4    9    5    9 -->
-#                          --> Binary Value: 0000 0100 1001 0101 1001 --> Finally: 00000100100101011001
-#
-# Finally we create a string that has all the binary numbers together
+class Target():
+    def __init__(self) -> None:
+        sitting_mean_values, walking_mean_values, standingUp_mean_values, standing_mean_values, sittingDown_mean_values = calculate_targets()
+
+        self.sitting_tPoints = self.create_point(sitting_mean_values)
+        self.walking_tPoints = self.create_point(walking_mean_values)
+        self.standingUp_tPoints = self.create_point(standingUp_mean_values)
+        self.standing_tPoints = self.create_point(standing_mean_values)
+        self.sittingDown_tPoints = self.create_point(sittingDown_mean_values)
+
+    def create_point(self, values: list()):
+        temp = TargetPoints(
+            Point([values[i] for i in range(0, 3)]),
+            Point([values[i] for i in range(3, 6)]),
+            Point([values[i] for i in range(6, 9)]),
+            Point([values[i] for i in range(9, 12)])
+        )
+        return temp
+
+    def get_target(self) -> TargetPoints:
+        return self.sitting_tPoints
+
+    def get_other_position_values(self):
+        return self.walking_tPoints, self.standingUp_tPoints, self.standing_tPoints, self.sittingDown_tPoints
 
 
 def drop_unnecessary_columns(df: pd.DataFrame, columns_to_drop: list()):
@@ -27,12 +41,34 @@ def drop_unnecessary_columns(df: pd.DataFrame, columns_to_drop: list()):
 def read_csv_make_changes():
     df = pd.read_csv("dataset.csv", delimiter=';', low_memory=False)
 
-    df = df.loc[df['class'] == 'sitting']
+    # split positions
+    sitting_pos = df.loc[df['class'] == 'sitting']
+    walking_pos = df.loc[df['class'] == 'walking']
+    standingUp_pos = df.loc[df['class'] == 'standingup']
+    standing_pos = df.loc[df['class'] == 'standing']
+    sittingDown_pos = df.loc[df['class'] == 'sittingdown']
+
     columns_to_delete = ['user', 'gender', 'age',
                          'how_tall_in_meters', 'weight', 'body_mass_index', 'class']
 
-    df = drop_unnecessary_columns(df, columns_to_delete)
-    return df
+    # delete unnecessary columns from all positions
+    sitting_pos = drop_unnecessary_columns(
+        sitting_pos, columns_to_delete
+    )
+    walking_pos = drop_unnecessary_columns(
+        walking_pos, columns_to_delete
+    )
+    standingUp_pos = drop_unnecessary_columns(
+        standingUp_pos, columns_to_delete
+    )
+    standing_pos = drop_unnecessary_columns(
+        standing_pos, columns_to_delete
+    )
+    sittingDown_pos = drop_unnecessary_columns(
+        sittingDown_pos, columns_to_delete
+    )
+
+    return sitting_pos, walking_pos, standingUp_pos, standing_pos, sittingDown_pos
 
 
 def transform_data(data):
@@ -45,84 +81,50 @@ def transform_data(data):
     return return_data
 
 
-def calculate_target():
-    df = read_csv_make_changes()
-    df = transform_data(data=df)
+def calculate_targets():
+    sitting_pos, walking_pos, standingUp_pos, standing_pos, sittingDown_pos = read_csv_make_changes()
 
-    sensor_values = list()
+    # transform data with the Quantile Transformer
+    sitting_pos = transform_data(sitting_pos)
+    walking_pos = transform_data(walking_pos)
+    standingUp_pos = transform_data(standingUp_pos)
+    standing_pos = transform_data(standing_pos)
+    sittingDown_pos = transform_data(sittingDown_pos)
+
+    # calculate the mean values for each position
+    # values will be stored in an array like: [x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4]
+    sitting_mean_values = calculate_mean_values(sitting_pos)
+    walking_mean_values = calculate_mean_values(walking_pos)
+    standingUp_mean_values = calculate_mean_values(standingUp_pos)
+    standing_mean_values = calculate_mean_values(standing_pos)
+    sittingDown_mean_values = calculate_mean_values(sittingDown_pos)
+
+    if DEBUG_INFO:
+        print(sitting_mean_values)
+        print(walking_mean_values)
+        print(standingUp_mean_values)
+        print(standing_mean_values)
+        print(sittingDown_mean_values)
+
+    return sitting_mean_values, walking_mean_values, standingUp_mean_values, standing_mean_values, sittingDown_mean_values
+
+
+def calculate_mean_values(df: pd.DataFrame):
+    temp_list = list()
+
     for key in df.keys():
-        sensor_values.append({
-            'name': key,
-            'mean_value': df[key].mean()
-        })
+        temp_list.append(df[key].mean())
 
-    final_values = list()
-    for sensor in sensor_values:
-        temp_value = '%.10f' % (sensor['mean_value'])
-        temp_value = temp_value.replace(".", "")
-
-        temp_binary = ""
-        for number in temp_value:
-            temp_binary += decimal_to_binary(int(number))
-
-        final_values.append(temp_binary)
-
-        if DEBUG_INFO:
-            print(sensor['name'] + ' | Sensor Value: ' + str(sensor['mean_value']) + ' | Decimal Value: ' +
-                  str(temp_value) + ' | Binary Value: ' + temp_binary)
-
-    final_str = ''
-    for final_value in final_values:
-        final_str += final_value
-    return final_str
-
-
-def decimal_to_binary(num: int):
-    binary_num = bin(num).replace("0b", "")
-
-    if len(binary_num) != 4:
-        for i in range(4 - len(binary_num)):
-            binary_num = f"{'0'}{binary_num}"
-
-    return binary_num
-
-
-def decrypt_target(target: str):
-    list_of_values = [target[i:i+44] for i in range(0, len(target), 44)]
-
-    changed_values = list()
-    for value in list_of_values:
-        list_of_numbers = [value[j:j+4]
-                           for j in range(0, len(value), 4)]
-
-        temp_value = str()
-        for num in list_of_numbers:
-            temp_value += str(binary_to_decimal(int(num)))
-        changed_values.append(f"{temp_value[0]}.{temp_value[1:]}")
-
-    return changed_values
-
-
-def binary_to_decimal(binary: int):
-    decimal, i = 0, 0
-    while(binary != 0):
-        dec = binary % 10
-        decimal = decimal + dec * pow(2, i)
-        binary = binary//10
-        i += 1
-
-    return decimal
+    return temp_list
 
 
 DEBUG_INFO = False
 
 if __name__ == '__main__':
-    target = calculate_target()
-    print(f"target length: {len(target)}")
+    target = Target()
+    distance = target.sitting_tPoints.measure_average_distance(
+        target.sittingDown_tPoints)
 
-    decrypt_target(target)
-    if DEBUG_INFO:
-        # print the target values splitted
-        print(
-            f"\nencrypted target values:\n{[target[i:i+44] for i in range(0, len(target), 44)]}")
-        print(f"\ndecrypted target values:\n{decrypt_target(target)}")
+    print(str(target.sitting_tPoints) + "\n")
+    print(target.sittingDown_tPoints)
+    print(distance)

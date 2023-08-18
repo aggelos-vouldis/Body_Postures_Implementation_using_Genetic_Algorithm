@@ -1,14 +1,15 @@
-from DNA import DNA
+from DNA import DNA, CrossoverDeniedException
 from math import floor
 from random import shuffle, randint
 from numpy import interp
-from DNA import CrossoverDeniedException
+from Target import Target
 
 
 class Population():
-    def __init__(self, target, mutationRate, crossover_probability, population_max, logger, show_debug_info=False):
+    def __init__(self, target, other_positions, mutationRate, crossover_probability, population_max, logger=None, show_debug_info=False):
         # setup logger
-        self.logger = logger
+        if logger is not None:
+            self.logger = logger
         self.DEBUG_INFO = show_debug_info
         if self.DEBUG_INFO:
             self.logger = logger
@@ -18,28 +19,73 @@ class Population():
         self.generations = 0  # number of generations
 
         self.finished = False  # Boolean that represents whether we have finished evolving
-        self.target = target  # Target list of numbers
+        self.target = target  # Our Target
         self.mutation_rate = mutationRate  # Mutation Rate
         self.crossover_probability = crossover_probability  # Crossover Likelihood
         self.perfect_score = 1
 
-        self.best = ''
+        # save all other positions values
+        # 0 -> walking | 1 -> standingUp | 2 -> standing | 3 -> sittingDown
+        self.all_other_position_values = other_positions
+
+        # default variables
+        self.best = type(DNA)
         self.best_fitness = 0
         self.last_best_fitness = 0
         self.best_overall_fitness = 0
         self.terminate_counter = 0
 
         for i in range(population_max):
-            self.population.append(DNA(len(self.target)))
+            self.population.append(DNA())
 
     # fill the fitness array with a value for every member of the population
     def __calcFitness__(self):
         for dna in self.population:
-            dna.calcFitness(self.target)
+            dna.calcFitness(self.target, self.all_other_position_values)
 
     # Generate a mating pool
-    def naturalSelection(self):
-        # Clear the Array List
+    def tournament_selection(self, n_comparisons):
+        "Implementation for Tournament Selection"
+
+        # Clear the mating_pool
+        self.mating_pool = list()
+
+        n_mating_pool = max([100, len(self.population)])
+
+        for j in range(n_mating_pool):
+            best_idx = 0
+            for i in range(n_comparisons):
+                random_idx = randint(0, len(self.population)-1)
+                self.population[random_idx]
+                if self.population[best_idx].fitness < self.population[random_idx].fitness:
+                    best_idx = random_idx
+            self.mating_pool.append(self.population[best_idx])
+        shuffle(self.mating_pool)
+
+    # Generate a mating pool
+    def rank_selection(self):
+        "Implementation for Fitness Proportionate Selection"
+
+        # Clear the mating_pool
+        self.mating_pool = list()
+
+        # sort the population based on fitness
+        pop_sorted = sorted(self.population, key=lambda x: x.fitness)
+
+        # rank the population of the sorted array
+        ranked_dna_dict = list()
+        for i, item in enumerate(pop_sorted):
+            ranked_dna_dict.append({'rank': len(pop_sorted)-i, 'DNA': item})
+
+        for dna_dict in ranked_dna_dict:
+            for i in range(dna_dict['rank'] * 10):
+                self.mating_pool.append(dna_dict['DNA'])
+
+    # Generate a mating pool
+    def cost_selection(self):
+        "Implementation for Cost-based Roulette Selection"
+
+        # Clear the mating_pool
         self.mating_pool = list()
 
         # find the minimum fitness of all the population
@@ -83,11 +129,11 @@ class Population():
                 parentA = self.mating_pool[a]
                 parentB = self.mating_pool[b]
 
-                child = parentA.crossover(
+                child = parentA.uniform_crossover(
                     parentB, self.crossover_probability)
                 child.mutate(self.mutation_rate)
             except CrossoverDeniedException:
-                child = DNA(len(self.target))
+                child = DNA()
 
             self.population.append(child)
         self.generations += 1
@@ -114,7 +160,6 @@ class Population():
         if self.best_fitness > self.best_overall_fitness:
             self.best_overall_fitness = self.best_fitness
 
-        # print(abs(self.best_fitness - self.last_best_fitness))
         if self.best_fitness == self.last_best_fitness or (self.best_fitness - self.last_best_fitness) <= 0.01:
             self.terminate_counter += 1
         else:
@@ -128,6 +173,12 @@ class Population():
 
     def __getGenerations__(self):
         return self.generation
+
+    def __str__(self) -> str:
+        temp_str = ''
+        for DNA in self.population:
+            temp_str += f"{str(DNA)}\n"
+        return temp_str
 
     def __print__(self):
         for DNA in self.population:
@@ -161,3 +212,16 @@ class Population():
         debug_str += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
 
         self.logger.debug(debug_str)
+
+
+if __name__ == '__main__':
+    target = Target()
+    pop = Population(
+        target=target.get_target(),
+        other_positions=target.get_other_position_values(),
+        mutationRate=0.01,
+        crossover_probability=1,
+        population_max=5)
+
+    pop.__calcFitness__()
+    pop.tournament_selection(3)

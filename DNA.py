@@ -1,63 +1,118 @@
 from random import random
-from math import floor
 from random import randint, random
+from Point import TargetPoints
+from Errors import CrossoverDeniedException
+from typing import Tuple
+from Target import Target
 
 
 class DNA():
 
-    def __init__(self, num: int):
-        self.genes = ''
+    def __init__(self):
+        self.genes = TargetPoints()
         self.fitness = 0
 
-        for i in range(num):
-            self.genes += f"{randint(0, 1)}"
+    def calcFitness(self, target: TargetPoints, other_positions: Tuple[TargetPoints]):
+        "Calculates the fitness of this DNA (it emphasize the target distance)"
 
-    def calcFitness(self, target):
-        # 1 = the best fitness
-        temp_score = 0
-        for i, num in enumerate(target):
-            if(num == self.genes[i]):
-                temp_score += 1
+        target_similarity = target.measure_cosine_similarity(self.genes)
 
-        self.fitness = temp_score / len(target)
+        temp_dist = 0
+        for other_position in other_positions:
+            temp_dist += other_position.measure_cosine_similarity(self.genes)
+        temp_dist = 1 - (temp_dist / len(other_positions))
 
-    def crossover(self, partner, crossover_probability):
-        if(random() > crossover_probability):
+        c = 0.2
+        self.fitness = (target_similarity + c * (temp_dist)) / (1 + c)
+
+    def single_point_crossover(self, partner, crossover_probability):
+        if random() > crossover_probability:
             raise CrossoverDeniedException
-        # A new child
-        child = DNA(len(self.genes))
+        child = DNA()
 
         midpoint = randint(0, len(self.genes))
 
-        # half genes from the parentA half from the parentB
+        for i in range(len(self.genes)):
+            if(i > midpoint):
+                child.genes.set_i(i, self.genes.get_i(i))
+            else:
+                child.genes.set_i(i, partner.genes.get_i(i))
+
+        return child
+
+    def multiple_point_crossover(self, partner, crossover_probability, crossover_points):
+        "Multiple point crossover method. It needs a list of crossover points ex [2,3,4,5]"
+
+        if(len(crossover_points) < 2 or len(crossover_points) >= 5):
+            raise SyntaxError
+
+        if random() > crossover_probability:
+            raise CrossoverDeniedException
+        child = DNA()
+
+        if len(crossover_points) == 2:
+            for i in range(len(self.genes)):
+                if(i < crossover_points[0]):
+                    child.genes.set_i(i, self.genes.get_i(i))
+                elif i < crossover_points[1]:
+                    child.genes.set_i(i, partner.genes.get_i(i))
+                else:
+                    child.genes.set_i(i, self.genes.get_i(i))
+
+        elif len(crossover_points) == 3:
+            for i in range(len(self.genes)):
+                if(i < crossover_points[0]):
+                    child.genes.set_i(i, self.genes.get_i(i))
+                elif i < crossover_points[1]:
+                    child.genes.set_i(i, partner.genes.get_i(i))
+                elif i < crossover_points[2]:
+                    child.genes.set_i(i, self.genes.get_i(i))
+                else:
+                    child.genes.set_i(i, partner.genes.get_i(i))
+        elif len(crossover_points) == 4:
+            for i in range(len(self.genes)):
+                if(i < crossover_points[0]):
+                    child.genes.set_i(i, self.genes.get_i(i))
+                elif i < crossover_points[1]:
+                    child.genes.set_i(i, partner.genes.get_i(i))
+                elif i < crossover_points[2]:
+                    child.genes.set_i(i, self.genes.get_i(i))
+                elif i < crossover_points[3]:
+                    child.genes.set_i(i, partner.genes.get_i(i))
+                else:
+                    child.genes.set_i(i, self.genes.get_i(i))
+
+        return child
+
+    def uniform_crossover(self, partner, crossover_probability: float):
+        if(random() > crossover_probability):
+            raise CrossoverDeniedException
+        # A new child
+        child = DNA()
+
         for i in range(len(self.genes)):
             if randint(0, 1) == 0:
-                child.genes = self.__change_gen_character__(
-                    child.genes, i, self.genes[i])
+                child.genes.set_i(i, self.genes.get_i(i))
             else:
-                child.genes = self.__change_gen_character__(
-                    child.genes, i, partner.genes[i])
+                child.genes.set_i(i, partner.genes.get_i(i))
 
         return child
 
     def mutate(self, mutation_rate):
         for i in range(len(self.genes)):
             if(random() < mutation_rate):
-                self.genes = self.__change_gen_character__(
-                    genes_to_change=self.genes, char_index=i, character=self.genes[i])
+                self.genes.set_i(i, random())
 
-    def __toString__(self):
-        return self.genes
-
-    def __change_gen_character__(self, genes_to_change: str, char_index: int, character: str):
-        # function to change a specific character in the "genes" string
-        temp_list = list(genes_to_change)
-        temp_list[char_index] = character
-        genes_to_change = ''.join(temp_list)
-
-        return genes_to_change
+    def __str__(self) -> str:
+        return str(self.genes)
 
 
-class CrossoverDeniedException(Exception):
-    "Raised when a crossover is denied"
-    pass
+if __name__ == '__main__':
+    dna1 = DNA()
+    dna2 = DNA()
+
+    child = dna1.multiple_point_crossover(dna2, 1, [2, 4, 6, 8])
+
+    t = Target()
+    child.calcFitness(t.get_target(), t.get_other_position_values())
+    print(f"child:\n{child.fitness}")
