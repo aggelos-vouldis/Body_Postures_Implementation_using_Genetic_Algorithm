@@ -175,13 +175,6 @@ class TargetPoints():
         self.p3 = p3
         self.p4 = p4
 
-    def something(self):
-        print(self.p1.x, self.p1.y, self.p1.z,
-              self.p2.x, self.p2.y, self.p2.z,
-              self.p3.x, self.p3.y, self.p3.z,
-              self.p4.x, self.p4.y, self.p4.z
-              )
-
     def __str__(self) -> str:
         temp_str = ''
         temp_str += f"{self.p1}\n{self.p2}\n{self.p3}\n{self.p4}"
@@ -206,8 +199,6 @@ if __name__ == '__main__':
     )
 
     cosine = tp1.measure_cosine_similarity(tp2)
-
+    dist = tp1.measure_average_distance(tp2)
     print(f"cosine: {cosine}")
-
-    print(len(tp1))
-    # print(f"distance: {distance}")
+    print(f"distance: {dist}")

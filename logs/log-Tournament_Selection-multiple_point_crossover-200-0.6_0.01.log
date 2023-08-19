@@ -1,0 +1,69 @@
+Target: 
+Point: (0.4975417216707138, 0.5052484439229287, 0.49773285722055005)
+Point: (0.5009959523513199, 0.5012675198491753, 0.5007947171941793)
+Point: (0.4995551525461075, 0.49805353840410005, 0.5023766978164744)
+Point: (0.4973906788432024, 0.4949294785292547, 0.4985466511772318)
+
+Execution 1
+------------------------------------------------
+Total Generations: 53
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7987866144334972  ---  Best Overall Fitness: 0.833265925964297
+------------------------------------------------
+Execution 2
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7960990608714005  ---  Best Overall Fitness: 0.8331376525704414
+------------------------------------------------
+Execution 3
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7979296706899524  ---  Best Overall Fitness: 0.8332343958079573
+------------------------------------------------
+Execution 4
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.8018316278096009  ---  Best Overall Fitness: 0.8332112639769245
+------------------------------------------------
+Execution 5
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7980957176074801  ---  Best Overall Fitness: 0.8331553172968421
+------------------------------------------------
+Execution 6
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.802014065192759  ---  Best Overall Fitness: 0.833213526710769
+------------------------------------------------
+Execution 7
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7964796133633674  ---  Best Overall Fitness: 0.8333067899002604
+------------------------------------------------
+Execution 8
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7983722089232659  ---  Best Overall Fitness: 0.8332577854675618
+------------------------------------------------
+Execution 9
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7976444395003722  ---  Best Overall Fitness: 0.8332340118157505
+------------------------------------------------
+Execution 10
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.01  ---  Crossover Probability: 0.6
+Average Fitness: 0.7983179897044649  ---  Best Overall Fitness: 0.8332021918804359
+------------------------------------------------
+Best Fitnesses mean: 0.8332218861391241
+Total Generations mean: 51.4
+------------------------------------------------

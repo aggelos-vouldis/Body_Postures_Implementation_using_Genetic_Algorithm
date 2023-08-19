@@ -14,8 +14,6 @@ def run_GA(filename: str, execution_num=0):
     if DEBUG_INFO:
         print(f"\nExecution {execution_num + 1}\n")
 
-    print(
-        f"picked_crossover: {picked_crossover}, picked_selection:{picked_selection}")
     # Create a random population of N elements
     pop = Population(
         target=target.get_target(),
@@ -72,69 +70,73 @@ LOGGING = True  # Boolean to log information
 DEBUG_INFO = False  # Boolean to show information
 
 # Basic Variables
-max_pop = 200
-crossover_probability = 0.1
-mutation_rate = 0.01
+max_populations = [200, 20]
+crossover_probabilities = [0.1, 0.6, 0.9]
+mutation_rates = [0.01, 0.0, 0.1]
 
-selection_types = [{
-    'type': 0,
-    'name': 'Tournament_Selection',
-    'n_comparisons': int(max_pop / 2)
-}, {
-    'type': 1,
-    'name': 'Rank_Selection'
-}, {
-    'type': 2,
-    'name': 'Cost_Selection'
-}]
-crossover_types = [{
-    'type': 0,
-    'probability': crossover_probability,
-    'name': 'single_point_crossover'
-},
-    {
-    'type': 1,
-    'probability': crossover_probability,
-    'points': [2, 3, 4, 5],
-    'name': 'multiple_point_crossover'
-},
-    {
-    'type': 2,
-    'probability': crossover_probability,
-    'name': 'uniform_crossover'
-}]
+for max_pop in max_populations:
+    for crossover_probability in crossover_probabilities:
+        for mutation_rate in mutation_rates:
 
-picked_selection = selection_types[0]
-picked_crossover = crossover_types[0]
+            selection_types = [{
+                'type': 0,
+                'name': 'Tournament_Selection',
+                'n_comparisons': int(max_pop / 2)
+            }, {
+                'type': 1,
+                'name': 'Rank_Selection'
+            }, {
+                'type': 2,
+                'name': 'Cost_Selection'
+            }]
+            crossover_types = [{
+                'type': 0,
+                'probability': crossover_probability,
+                'name': 'single_point_crossover'
+            },
+                {
+                'type': 1,
+                'probability': crossover_probability,
+                'points': [2, 3, 4, 5],
+                'name': 'multiple_point_crossover'
+            },
+                {
+                'type': 2,
+                'probability': crossover_probability,
+                'name': 'uniform_crossover'
+            }]
 
-print()
-# setup Logger
-filename = f"logs/log-{picked_selection['name']}-{picked_crossover['name']}-{max_pop}-{crossover_probability}_{mutation_rate}.log"
+            for picked_selection in selection_types:
+                for picked_crossover in crossover_types:
 
-target = Target()
-if LOGGING:
-    write_to_file(
-        filename, f"Target: \n{target.get_target()}\n")
+                    print()
+                    # setup Logger
+                    filename = f"logs/log-{picked_selection['name']}-{picked_crossover['name']}-{max_pop}-{crossover_probability}_{mutation_rate}.log"
 
-best_fitness_values = list()
-generation_values = list()
+                    target = Target()
+                    if LOGGING:
+                        write_to_file(
+                            filename, f"Target: \n{target.get_target()}\n")
 
-print(
-    "-------------------------- STARTING --------------------------")
+                    best_fitness_values = list()
+                    generation_values = list()
 
-for i in range(n_runs):
-    run_GA(filename, i)
+                    print(
+                        "-------------------------- STARTING --------------------------")
 
-if LOGGING:
-    write_to_file(
-        filename, f"\nBest Fitnesses mean: {mean(best_fitness_values)}\n")
-    write_to_file(
-        filename, f"Total Generations mean: {mean(generation_values)}\n")
-    write_to_file(
-        filename, "------------------------------------------------")
+                    for i in range(n_runs):
+                        run_GA(filename, i)
 
-print(
-    f"""-------------------------- FINISHED --------------------------
+                    if LOGGING:
+                        write_to_file(
+                            filename, f"\nBest Fitnesses mean: {mean(best_fitness_values)}\n")
+                        write_to_file(
+                            filename, f"Total Generations mean: {mean(generation_values)}\n")
+                        write_to_file(
+                            filename, "------------------------------------------------")
+
+                    print(
+                        f"""-------------------------- FINISHED --------------------------
 best fitnesses mean: {mean(best_fitness_values)}
 generations value mean: {mean(generation_values)}
 ------------------------------------------------""")

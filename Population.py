@@ -9,14 +9,23 @@ from Errors import InvalidSelectionType
 class Population():
     "Class that represents a population of DNA sequences"
 
-    def __init__(self, target, other_positions, mutationRate, crossover_probability, population_max, logger=None, show_debug_info=False) -> None:
+    def __init__(
+        self,
+        target,
+        other_positions,
+        mutationRate,
+        crossover_probability,
+        population_max,
+        crossover_type,
+        filename=None,
+        show_debug_info=False
+    ) -> None:
         # setup logger
-        if logger is not None:
-            self.logger = logger
+        if filename is not None:
+            self.filename = filename
             self.DEBUG_INFO = show_debug_info
-        if self.DEBUG_INFO:
-            self.logger = logger
 
+        self.crossover_type = crossover_type
         self.population = list()  # Array to hold the current population
         self.mating_pool = list()  # ArrayList which we will use for our "mating pool"
         self.generations = 0  # number of generations
@@ -147,27 +156,7 @@ class Population():
                 parentA = self.mating_pool[a]
                 parentB = self.mating_pool[b]
 
-                crossover_types = [{
-                    'type': 0,
-                    'partner': parentB,
-                    'probability': self.crossover_probability,
-                    'name': 'single_point_crossover'
-                },
-                    {
-                        'type': 1,
-                        'partner': parentB,
-                        'probability': self.crossover_probability,
-                        'points': [2, 3, 4, 5],
-                        'name': 'multiple_point_crossover'
-                },
-                    {
-                        'type': 2,
-                        'partner': parentB,
-                        'probability': self.crossover_probability,
-                        'name': 'uniform_crossover'
-                }]
-
-                child = parentA.crossover(crossover_types[0])
+                child = parentA.crossover(self.crossover_type, parentB)
                 child.mutate(self.mutation_rate)
             except CrossoverDeniedException:
                 child = DNA()
@@ -256,6 +245,13 @@ class Population():
         temp_str += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
 
         print(temp_str)
+
+    def write_to_file(self):
+        with open(self.filename, 'a') as f:
+            message = ''
+            message += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
+
+            f.write(message)
 
 
 if __name__ == '__main__':

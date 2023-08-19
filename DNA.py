@@ -26,16 +26,16 @@ class DNA():
         c = 0.2
         self.fitness = (target_similarity + c * (temp_dist)) / (1 + c)
 
-    def crossover(self, picked_crossover: dict):
+    def crossover(self, picked_crossover: dict, partner):
         if picked_crossover['type'] == 0:
             child = self.single_point_crossover(
-                picked_crossover['partner'], picked_crossover['probability'])
+                partner, picked_crossover['probability'])
         elif picked_crossover['type'] == 1:
             child = self.multiple_point_crossover(
-                picked_crossover['partner'], picked_crossover['probability'], picked_crossover['points'])
+                partner, picked_crossover['probability'], picked_crossover['points'])
         elif picked_crossover['type'] == 2:
             child = self.uniform_crossover(
-                picked_crossover['partner'], picked_crossover['probability'])
+                partner, picked_crossover['probability'])
         else:
             raise InvalidCrossoverType
 

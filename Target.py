@@ -122,9 +122,9 @@ DEBUG_INFO = False
 
 if __name__ == '__main__':
     target = Target()
-    distance = target.sitting_tPoints.measure_average_distance(
-        target.sittingDown_tPoints)
 
-    print(str(target.sitting_tPoints) + "\n")
-    print(target.sittingDown_tPoints)
-    print(distance)
+    print(f"Target:\n{target.get_target()}\n")
+
+    print("All the other posible positions:\n")
+    for other_value in target.get_other_position_values():
+        print(f"{other_value}\n")
