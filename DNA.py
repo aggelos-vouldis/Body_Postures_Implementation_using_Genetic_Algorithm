@@ -1,18 +1,19 @@
-from random import random
-from random import randint, random
+from random import random, randint
 from Point import TargetPoints
 from Errors import CrossoverDeniedException
 from typing import Tuple
 from Target import Target
+from Errors import InvalidCrossoverType
 
 
 class DNA():
+    "Class that represents a DNA sequence"
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.genes = TargetPoints()
         self.fitness = 0
 
-    def calcFitness(self, target: TargetPoints, other_positions: Tuple[TargetPoints]):
+    def calcFitness(self, target: TargetPoints, other_positions: Tuple[TargetPoints]) -> None:
         "Calculates the fitness of this DNA (it emphasize the target distance)"
 
         target_similarity = target.measure_cosine_similarity(self.genes)
@@ -25,7 +26,22 @@ class DNA():
         c = 0.2
         self.fitness = (target_similarity + c * (temp_dist)) / (1 + c)
 
-    def single_point_crossover(self, partner, crossover_probability):
+    def crossover(self, picked_crossover: dict):
+        if picked_crossover['type'] == 0:
+            child = self.single_point_crossover(
+                picked_crossover['partner'], picked_crossover['probability'])
+        elif picked_crossover['type'] == 1:
+            child = self.multiple_point_crossover(
+                picked_crossover['partner'], picked_crossover['probability'], picked_crossover['points'])
+        elif picked_crossover['type'] == 2:
+            child = self.uniform_crossover(
+                picked_crossover['partner'], picked_crossover['probability'])
+        else:
+            raise InvalidCrossoverType
+
+        return child
+
+    def single_point_crossover(self, partner, crossover_probability: float):
         if random() > crossover_probability:
             raise CrossoverDeniedException
         child = DNA()
@@ -40,7 +56,7 @@ class DNA():
 
         return child
 
-    def multiple_point_crossover(self, partner, crossover_probability, crossover_points):
+    def multiple_point_crossover(self, partner, crossover_probability: float, crossover_points):
         "Multiple point crossover method. It needs a list of crossover points ex [2,3,4,5]"
 
         if(len(crossover_points) < 2 or len(crossover_points) >= 5):

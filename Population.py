@@ -3,14 +3,17 @@ from math import floor
 from random import shuffle, randint
 from numpy import interp
 from Target import Target
+from Errors import InvalidSelectionType
 
 
 class Population():
-    def __init__(self, target, other_positions, mutationRate, crossover_probability, population_max, logger=None, show_debug_info=False):
+    "Class that represents a population of DNA sequences"
+
+    def __init__(self, target, other_positions, mutationRate, crossover_probability, population_max, logger=None, show_debug_info=False) -> None:
         # setup logger
         if logger is not None:
             self.logger = logger
-        self.DEBUG_INFO = show_debug_info
+            self.DEBUG_INFO = show_debug_info
         if self.DEBUG_INFO:
             self.logger = logger
 
@@ -39,12 +42,27 @@ class Population():
             self.population.append(DNA())
 
     # fill the fitness array with a value for every member of the population
-    def __calcFitness__(self):
+    def __calcFitness__(self) -> None:
+        "Calculate the fitness of all members of the population"
         for dna in self.population:
             dna.calcFitness(self.target, self.all_other_position_values)
 
+    def generate_mating_pool(self, selection_type: dict) -> None:
+        """generate a mating pool with one of 3 possible selection types
+        tournament_selection, rank_selection, cost_selection
+        """
+
+        if selection_type['type'] == 0:
+            self.tournament_selection(selection_type['n_comparisons'])
+        elif selection_type['type'] == 1:
+            self.rank_selection()
+        elif selection_type['type'] == 2:
+            self.cost_selection()
+        else:
+            raise InvalidSelectionType
+
     # Generate a mating pool
-    def tournament_selection(self, n_comparisons):
+    def tournament_selection(self, n_comparisons) -> None:
         "Implementation for Tournament Selection"
 
         # Clear the mating_pool
@@ -63,7 +81,7 @@ class Population():
         shuffle(self.mating_pool)
 
     # Generate a mating pool
-    def rank_selection(self):
+    def rank_selection(self) -> None:
         "Implementation for Fitness Proportionate Selection"
 
         # Clear the mating_pool
@@ -82,7 +100,7 @@ class Population():
                 self.mating_pool.append(dna_dict['DNA'])
 
     # Generate a mating pool
-    def cost_selection(self):
+    def cost_selection(self) -> None:
         "Implementation for Cost-based Roulette Selection"
 
         # Clear the mating_pool
@@ -114,7 +132,7 @@ class Population():
         shuffle(self.mating_pool)
 
     # Create a new generation
-    def generate(self):
+    def generate(self) -> None:
         # Refill the generation with children from the mating pool
         # clear the past population
         last_population = self.population
@@ -129,8 +147,27 @@ class Population():
                 parentA = self.mating_pool[a]
                 parentB = self.mating_pool[b]
 
-                child = parentA.uniform_crossover(
-                    parentB, self.crossover_probability)
+                crossover_types = [{
+                    'type': 0,
+                    'partner': parentB,
+                    'probability': self.crossover_probability,
+                    'name': 'single_point_crossover'
+                },
+                    {
+                        'type': 1,
+                        'partner': parentB,
+                        'probability': self.crossover_probability,
+                        'points': [2, 3, 4, 5],
+                        'name': 'multiple_point_crossover'
+                },
+                    {
+                        'type': 2,
+                        'partner': parentB,
+                        'probability': self.crossover_probability,
+                        'name': 'uniform_crossover'
+                }]
+
+                child = parentA.crossover(crossover_types[0])
                 child.mutate(self.mutation_rate)
             except CrossoverDeniedException:
                 child = DNA()
@@ -142,7 +179,7 @@ class Population():
         return self.best
 
     # Compute the current most fit member of the population
-    def evaluate(self):
+    def evaluate(self) -> None:
         world_record = 0
         idx = 0
 
@@ -168,10 +205,10 @@ class Population():
         if world_record == self.perfect_score:  # perfect score has reached
             self.finished = True
 
-    def __isFinished__(self):
+    def __isFinished__(self) -> bool:
         return self.finished
 
-    def __getGenerations__(self):
+    def __getGenerations__(self) -> int:
         return self.generation
 
     def __str__(self) -> str:
@@ -180,38 +217,45 @@ class Population():
             temp_str += f"{str(DNA)}\n"
         return temp_str
 
-    def __print__(self):
+    def __print__(self) -> None:
         for DNA in self.population:
             print(DNA.__toString__())
 
-    def __printFitness__(self):
+    def __printFitness__(self) -> None:
         for dna in self.population:
             print(dna.fitness)
 
-    def __getAverageFitness__(self):
+    def __getAverageFitness__(self) -> float:
         total = 0
         for dna in self.population:
             total += dna.fitness
 
         return total / len(self.population)
 
-    def __terminate__(self):
+    def __terminate__(self) -> bool:
         if self.finished:
             return True
 
-        if self.terminate_counter >= 20:
+        if self.terminate_counter >= 50:
             return True
 
         if self.generations >= 1000:
             return True
-
         return False
 
-    def __write_debug_info__(self):
+    def __write_debug_info__(self) -> None:
         debug_str = ''
         debug_str += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
 
         self.logger.debug(debug_str)
+
+    def __print_debug_info__(self, show) -> None:
+        if not show:
+            return
+        temp_str = ''
+        temp_str += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
+
+        print(temp_str)
 
 
 if __name__ == '__main__':
