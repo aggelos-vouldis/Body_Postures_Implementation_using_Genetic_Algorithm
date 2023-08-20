@@ -1,6 +1,8 @@
 from Target import Target
 from Population import Population
 from numpy import mean
+from time import process_time_ns
+from pandas import to_timedelta
 
 
 def write_to_file(filename, message):
@@ -74,6 +76,10 @@ max_populations = [200, 20]
 crossover_probabilities = [0.1, 0.6, 0.9]
 mutation_rates = [0.01, 0.0, 0.1]
 
+counter = 0
+
+t = process_time_ns()
+
 for max_pop in max_populations:
     for crossover_probability in crossover_probabilities:
         for mutation_rate in mutation_rates:
@@ -109,9 +115,11 @@ for max_pop in max_populations:
             for picked_selection in selection_types:
                 for picked_crossover in crossover_types:
 
-                    print()
+                    print(
+                        f"picked_selection: {picked_selection['name']} - picked_crossover: {picked_crossover['name']} - max_pop: {max_pop} - crossover_probability: {crossover_probability} - mutation_rate: {mutation_rate}\nREMAINING: {162 - counter}")
+
                     # setup Logger
-                    filename = f"logs/log-{picked_selection['name']}-{picked_crossover['name']}-{max_pop}-{crossover_probability}_{mutation_rate}.log"
+                    filename = f"logs/log-{picked_selection['name']}-{picked_crossover['name']}-{max_pop}-{crossover_probability}-{mutation_rate}.log"
 
                     target = Target()
                     if LOGGING:
@@ -140,3 +148,6 @@ for max_pop in max_populations:
 best fitnesses mean: {mean(best_fitness_values)}
 generations value mean: {mean(generation_values)}
 ------------------------------------------------""")
+                    counter += 1
+
+print(f"EXECUTION TIME: {to_timedelta(process_time_ns() - t)}")

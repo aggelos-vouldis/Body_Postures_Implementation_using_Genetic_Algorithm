@@ -18,7 +18,8 @@ class Population():
         population_max,
         crossover_type,
         filename=None,
-        show_debug_info=False
+        show_debug_info=False,
+        heuristic_start=None
     ) -> None:
         # setup logger
         if filename is not None:
@@ -47,8 +48,11 @@ class Population():
         self.best_overall_fitness = 0
         self.terminate_counter = 0
 
-        for i in range(population_max):
-            self.population.append(DNA())
+        if heuristic_start != None:
+            self.population = heuristic_start
+        else:
+            for i in range(population_max):
+                self.population.append(DNA())
 
     # fill the fitness array with a value for every member of the population
     def __calcFitness__(self) -> None:
@@ -232,12 +236,6 @@ class Population():
             return True
         return False
 
-    def __write_debug_info__(self) -> None:
-        debug_str = ''
-        debug_str += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
-
-        self.logger.debug(debug_str)
-
     def __print_debug_info__(self, show) -> None:
         if not show:
             return
@@ -246,10 +244,10 @@ class Population():
 
         print(temp_str)
 
-    def write_to_file(self):
+    def __write_debug_info__(self):
         with open(self.filename, 'a') as f:
             message = ''
-            message += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}"
+            message += f"Generation {self.generations} | Average Generation Fitness: {self.__getAverageFitness__()} | Best Fitness: {self.best_fitness} | Population Length: {len(self.population)}\n"
 
             f.write(message)
 

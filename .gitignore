@@ -164,3 +164,6 @@ log.log
 
 # ignore all docx files
 *.docx
+
+# ignore all tmp files
+*.tmp

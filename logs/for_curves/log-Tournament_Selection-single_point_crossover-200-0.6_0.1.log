@@ -1,0 +1,588 @@
+Target: 
+Point: (0.4970215656268163, 0.49885226634273605, 0.49788581373514906)
+Point: (0.5049769699119128, 0.5029836079776765, 0.4978972605696587)
+Point: (0.4964828284640951, 0.4986861747422486, 0.502671836029401)
+Point: (0.49854313499493713, 0.4988478841795477, 0.49854496824929956)
+
+Execution 1
+Generation 1 | Average Generation Fitness: 0.7463884918407727 | Best Fitness: 0.8039556471958704 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7764902813814447 | Best Fitness: 0.8162082940700712 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7823772562689697 | Best Fitness: 0.8232071610357737 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.792198064793948 | Best Fitness: 0.828220715198884 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7918444393039408 | Best Fitness: 0.8291505746460305 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7916480901811496 | Best Fitness: 0.8308897749290025 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7910039123834822 | Best Fitness: 0.8310930893630498 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7899961210743974 | Best Fitness: 0.8316523275232423 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7929079260881068 | Best Fitness: 0.8319878917706038 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7925057793698629 | Best Fitness: 0.832376789328421 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.795058935364307 | Best Fitness: 0.8328728942049046 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7886351727345431 | Best Fitness: 0.8329182176770612 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.794699094847687 | Best Fitness: 0.8330863974392421 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7934130871200317 | Best Fitness: 0.8331382667467934 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7930212139818815 | Best Fitness: 0.8331382667467934 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7986736729297113 | Best Fitness: 0.8331486766311369 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7927344093570734 | Best Fitness: 0.8331486766311369 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7952103044965881 | Best Fitness: 0.8331794048932024 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.792384231510242 | Best Fitness: 0.8332111358296955 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7926454071974051 | Best Fitness: 0.8332112157440306 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7932763010457797 | Best Fitness: 0.8332340604307424 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7928659504381756 | Best Fitness: 0.8332343141036934 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7976264859506886 | Best Fitness: 0.8332343548798173 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7948275487223243 | Best Fitness: 0.833242609348481 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7960671073489294 | Best Fitness: 0.833242609348481 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7919396330694188 | Best Fitness: 0.8332474530333072 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7969200197582115 | Best Fitness: 0.8332474530333072 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7926256338119394 | Best Fitness: 0.8332474530333072 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7974602762121187 | Best Fitness: 0.8332475638347019 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7936739553134063 | Best Fitness: 0.8332479529118456 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.792474612764153 | Best Fitness: 0.8332481154155342 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7933276051118827 | Best Fitness: 0.8332806970480339 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7903426894333976 | Best Fitness: 0.8332806970480339 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.794789953012163 | Best Fitness: 0.8332806970480339 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7980655126864229 | Best Fitness: 0.8332816895132222 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7892098337497514 | Best Fitness: 0.8332960415789138 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7933555779019393 | Best Fitness: 0.8332963689244326 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7938899425425343 | Best Fitness: 0.8332963689244326 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7898814232504411 | Best Fitness: 0.8332963689244326 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7948383692110264 | Best Fitness: 0.8332999394164551 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7960117495821416 | Best Fitness: 0.8332999394164551 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7998714440465683 | Best Fitness: 0.8332999394164551 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7922556610114906 | Best Fitness: 0.8333052290831182 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7918172825057826 | Best Fitness: 0.833306698519664 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7911643666974948 | Best Fitness: 0.8333074126537906 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7920467021301255 | Best Fitness: 0.8333074126537906 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7999824123495926 | Best Fitness: 0.8333320705895986 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7953068670903768 | Best Fitness: 0.8333321895928979 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7858071172079099 | Best Fitness: 0.8333321895928979 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.7951070756721248 | Best Fitness: 0.8333322224131121 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7942578892478498 | Best Fitness: 0.8333330505965707 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.7927749467149008 | Best Fitness: 0.8333330505965707 | Population Length: 200
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7927749467149008  ---  Best Overall Fitness: 0.8333330505965707
+------------------------------------------------
+Execution 2
+Generation 1 | Average Generation Fitness: 0.757565775941814 | Best Fitness: 0.8198597558496676 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7800012475978317 | Best Fitness: 0.8238711505939328 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7910301362331557 | Best Fitness: 0.8291036759263916 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.789358525258233 | Best Fitness: 0.8302841894424404 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7934877411604496 | Best Fitness: 0.8316804444425028 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7914501606760854 | Best Fitness: 0.8318582857102879 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7985946559682575 | Best Fitness: 0.8321085015802104 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7915378756750496 | Best Fitness: 0.8322293232205233 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7925502933231392 | Best Fitness: 0.832315513030588 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7965224856143486 | Best Fitness: 0.8326403895803844 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.786061053266089 | Best Fitness: 0.8327063798018908 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7840485214117275 | Best Fitness: 0.8327306119242682 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7941280394611244 | Best Fitness: 0.8327930304989766 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7893820730361942 | Best Fitness: 0.8328933240922537 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7909968867906001 | Best Fitness: 0.8330075592107611 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7908021114420996 | Best Fitness: 0.8330093797808391 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7904570094475748 | Best Fitness: 0.8331347603250812 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7974117309357109 | Best Fitness: 0.8331552770600997 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7933871936512301 | Best Fitness: 0.8332218150635298 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7880757420155627 | Best Fitness: 0.8332218150635298 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7929865662375852 | Best Fitness: 0.8332510226204157 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7965378332681938 | Best Fitness: 0.8332510226204157 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7978168083975858 | Best Fitness: 0.8332510226204157 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.790658009849428 | Best Fitness: 0.8332523510048901 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7954353084135394 | Best Fitness: 0.8332523510048901 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.793732347469626 | Best Fitness: 0.8332523510048901 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7935088200489507 | Best Fitness: 0.8332606751815564 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7844036884573713 | Best Fitness: 0.8332606751815564 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7930007498111107 | Best Fitness: 0.8332670047439397 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7898348149627178 | Best Fitness: 0.8332670047439397 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7952227758821893 | Best Fitness: 0.8332717696743805 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7925608437794369 | Best Fitness: 0.8333109545042059 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7940558841870912 | Best Fitness: 0.8333171393605516 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7875265591388712 | Best Fitness: 0.8333171393605516 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7928878144464551 | Best Fitness: 0.8333171393605516 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7944192025373336 | Best Fitness: 0.8333171393605516 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7894123552176394 | Best Fitness: 0.833318169774027 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7948685049002581 | Best Fitness: 0.833318169774027 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7995109675767502 | Best Fitness: 0.8333234897805951 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7971715723679159 | Best Fitness: 0.8333234897805951 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7946165460758858 | Best Fitness: 0.8333234897805951 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.796446939441808 | Best Fitness: 0.8333269229132748 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7942796310772053 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7973524477947859 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7918120163558943 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7907883948509141 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.793573111407266 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7919003408885626 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7893091341800126 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.796833387306589 | Best Fitness: 0.8333290818251509 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7904445174946284 | Best Fitness: 0.8333290818251509 | Population Length: 200
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7904445174946284  ---  Best Overall Fitness: 0.8333290818251509
+------------------------------------------------
+Execution 3
+Generation 1 | Average Generation Fitness: 0.7518090217905951 | Best Fitness: 0.792639128166696 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7704438716748224 | Best Fitness: 0.8131476504476736 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7815527512124598 | Best Fitness: 0.8231713484303458 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.787949264032228 | Best Fitness: 0.8276416336540496 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7885389190931591 | Best Fitness: 0.8284405146883341 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7887047036840457 | Best Fitness: 0.8297512080607969 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7858328084574403 | Best Fitness: 0.8306792772179332 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7932500843218078 | Best Fitness: 0.8314029380168338 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7948568810006776 | Best Fitness: 0.8318000154722277 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7950125410815602 | Best Fitness: 0.8318985644506323 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.7943767047568737 | Best Fitness: 0.8319097215323517 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7920309803310589 | Best Fitness: 0.8321288067076031 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7925575074364773 | Best Fitness: 0.8323590634777086 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7869677120849193 | Best Fitness: 0.832487482502147 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.792960264382717 | Best Fitness: 0.8327103690600034 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7936330180058127 | Best Fitness: 0.8328296372245563 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.792332337617467 | Best Fitness: 0.8329301868887377 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7977152224686695 | Best Fitness: 0.8329885289999746 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7938104973219973 | Best Fitness: 0.8330789742404122 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7921902042163276 | Best Fitness: 0.8331598420601013 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7928559804058876 | Best Fitness: 0.8331780502849959 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7955159930014096 | Best Fitness: 0.8331780502849959 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7971410409421493 | Best Fitness: 0.8331780502849959 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7990765757871421 | Best Fitness: 0.8332164002213913 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7864903597890806 | Best Fitness: 0.8332592119134851 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7959833778629473 | Best Fitness: 0.833265649145085 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7924450973504051 | Best Fitness: 0.833265649145085 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.793201572830221 | Best Fitness: 0.8332674814903012 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7908238917499939 | Best Fitness: 0.8332792152787266 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7910917058645467 | Best Fitness: 0.8332792152787266 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7965539258509102 | Best Fitness: 0.8332792152787266 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.79151821217127 | Best Fitness: 0.8332792152787266 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7948761014398251 | Best Fitness: 0.8332801909752457 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7918614167074296 | Best Fitness: 0.8332857360405721 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7971761211914535 | Best Fitness: 0.8333217436790407 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7891834656964898 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7896011964839355 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7866816133301736 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7969784300267321 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7915709595643231 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7945906926602645 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7910983017836317 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7915931279050067 | Best Fitness: 0.8333227397719213 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7978697092904499 | Best Fitness: 0.8333251045911396 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.794462350130554 | Best Fitness: 0.8333252157912149 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7940180166755971 | Best Fitness: 0.8333252157912149 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7936929052439244 | Best Fitness: 0.8333252157912149 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7930390006605093 | Best Fitness: 0.8333252157912149 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7942101727725174 | Best Fitness: 0.8333252157912149 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.7915046633451338 | Best Fitness: 0.8333260302599405 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7967728882981987 | Best Fitness: 0.8333260302599405 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.7998609135917634 | Best Fitness: 0.8333260302599405 | Population Length: 200
+Generation 53 | Average Generation Fitness: 0.7909386511747382 | Best Fitness: 0.8333260302599405 | Population Length: 200
+------------------------------------------------
+Total Generations: 53
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7909386511747382  ---  Best Overall Fitness: 0.8333260302599405
+------------------------------------------------
+Execution 4
+Generation 1 | Average Generation Fitness: 0.7744520999298854 | Best Fitness: 0.8172682661676799 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7795423575015495 | Best Fitness: 0.82131850542552 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7877077089121802 | Best Fitness: 0.8253019945695885 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.7896631566620463 | Best Fitness: 0.8303316982062428 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7910793375725865 | Best Fitness: 0.8303316982062428 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7938699634717524 | Best Fitness: 0.8305878852219866 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7932371310303027 | Best Fitness: 0.830983086005212 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7896230151944172 | Best Fitness: 0.8313281324114017 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7916422370353079 | Best Fitness: 0.8316796863013658 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7907206225265864 | Best Fitness: 0.8320980232286587 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.7962735250038862 | Best Fitness: 0.8323865851502156 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7989235097946562 | Best Fitness: 0.8324156052670616 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7950729971087668 | Best Fitness: 0.8325990149523537 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7970366147353585 | Best Fitness: 0.8328166348937632 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7940229540465831 | Best Fitness: 0.8328218759410402 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7884501428231236 | Best Fitness: 0.8328498466494224 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7984284637048102 | Best Fitness: 0.8329107546920445 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7945589694718795 | Best Fitness: 0.8331354829874487 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7960300354752563 | Best Fitness: 0.8331354829874487 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7933013788508135 | Best Fitness: 0.8331354829874487 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7918265677658153 | Best Fitness: 0.8331574233287985 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7967621645536265 | Best Fitness: 0.8331574233287985 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7934316902406056 | Best Fitness: 0.8331882952833661 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7887700470907504 | Best Fitness: 0.8331882952833661 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7979951459683342 | Best Fitness: 0.8332681705145989 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.792893999570387 | Best Fitness: 0.8332681705145989 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.79674355315587 | Best Fitness: 0.8332698285390254 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.791388525572959 | Best Fitness: 0.8332698285390254 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7877703527648043 | Best Fitness: 0.8332698285390254 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7896249807984153 | Best Fitness: 0.8332698285390254 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7911097715687329 | Best Fitness: 0.8332698285390254 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7938730756205417 | Best Fitness: 0.8332758644029661 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.797403128415092 | Best Fitness: 0.8332986200650534 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7891068655065552 | Best Fitness: 0.8333037603978308 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7876929770243433 | Best Fitness: 0.8333037603978308 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7889823273528654 | Best Fitness: 0.833308051244091 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.792333658032497 | Best Fitness: 0.833308051244091 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7933405801966404 | Best Fitness: 0.8333103561558453 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7954283685756485 | Best Fitness: 0.8333103561558453 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7952888600466906 | Best Fitness: 0.833315582074758 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7981673183650995 | Best Fitness: 0.8333186799773942 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7965966013737463 | Best Fitness: 0.8333186799773942 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7963025139535971 | Best Fitness: 0.8333193326517788 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7969287332625272 | Best Fitness: 0.8333195521935021 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7882676182968189 | Best Fitness: 0.8333195913441165 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7883485775052091 | Best Fitness: 0.8333195913441165 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7946737091438152 | Best Fitness: 0.8333195913441165 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7950365844068616 | Best Fitness: 0.8333230413156968 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7921232924043414 | Best Fitness: 0.8333230413156968 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.7924212754565051 | Best Fitness: 0.833328006151157 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7940041300205882 | Best Fitness: 0.833328006151157 | Population Length: 200
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7940041300205882  ---  Best Overall Fitness: 0.833328006151157
+------------------------------------------------
+Execution 5
+Generation 1 | Average Generation Fitness: 0.7239625703120861 | Best Fitness: 0.8033724941196417 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7730257880308983 | Best Fitness: 0.8209278282646274 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7831670930566632 | Best Fitness: 0.8256701489780387 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.7819101079281434 | Best Fitness: 0.8285153587308023 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7904406260761552 | Best Fitness: 0.8306369885182673 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7912848227113662 | Best Fitness: 0.8314134180652464 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7930135252401265 | Best Fitness: 0.8325154832042612 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7947342812875366 | Best Fitness: 0.8327950988438516 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7901167493257245 | Best Fitness: 0.8329585436859586 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7903475664709997 | Best Fitness: 0.833058282536961 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.793198050797146 | Best Fitness: 0.8331106605021218 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7912992327722884 | Best Fitness: 0.8331106605021218 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7953809912557009 | Best Fitness: 0.8331258407747594 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7904673197279901 | Best Fitness: 0.8331258407747594 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7892900413228457 | Best Fitness: 0.8331484884089783 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7880908872565868 | Best Fitness: 0.8331514630927803 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7948514977768829 | Best Fitness: 0.8331514630927803 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.793585823303779 | Best Fitness: 0.8331549833155802 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7878127263605471 | Best Fitness: 0.8331698659648006 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7981870536509558 | Best Fitness: 0.8331751678341353 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7923900215711949 | Best Fitness: 0.8331791247237063 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7955465315988652 | Best Fitness: 0.8331806408842591 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7932708056537533 | Best Fitness: 0.8331806408842591 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7984353025515507 | Best Fitness: 0.8331907909136437 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7911904932912496 | Best Fitness: 0.8331912562857224 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7907933523305735 | Best Fitness: 0.8332553921936046 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7937879598243405 | Best Fitness: 0.8332805033998555 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7992862975333712 | Best Fitness: 0.8332907901147891 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7926960955544525 | Best Fitness: 0.8332907901147891 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7874395729843721 | Best Fitness: 0.8332907901147891 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7916333677070659 | Best Fitness: 0.8333062575174017 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7944646785403955 | Best Fitness: 0.8333116115577014 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7954939698035262 | Best Fitness: 0.8333130834003049 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7946361711365529 | Best Fitness: 0.8333130834003049 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.798027239741361 | Best Fitness: 0.8333130834003049 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.794438224011816 | Best Fitness: 0.8333130834003049 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7900147078832735 | Best Fitness: 0.8333141993776391 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.790193234675696 | Best Fitness: 0.8333141993776391 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.8000284856722769 | Best Fitness: 0.8333141993776391 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7878988955287339 | Best Fitness: 0.833314837079887 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.792937029347921 | Best Fitness: 0.8333197203732978 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7907823665616768 | Best Fitness: 0.8333197203732978 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7894420652567665 | Best Fitness: 0.8333197203732978 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7938216009530009 | Best Fitness: 0.8333215981405653 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7963300602133188 | Best Fitness: 0.8333224620242103 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7964167450656505 | Best Fitness: 0.8333224620242103 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7948703988219602 | Best Fitness: 0.8333247583590131 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7892239781784289 | Best Fitness: 0.8333267382336992 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7927129933335197 | Best Fitness: 0.8333282636748004 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.7937473228357353 | Best Fitness: 0.8333282636748004 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7925498335780803 | Best Fitness: 0.8333294772169241 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.7949631797862069 | Best Fitness: 0.8333294772169241 | Population Length: 200
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7949631797862069  ---  Best Overall Fitness: 0.8333294772169241
+------------------------------------------------
+Execution 6
+Generation 1 | Average Generation Fitness: 0.7266506376376999 | Best Fitness: 0.815151332278587 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7821454008193579 | Best Fitness: 0.8284710036950802 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.78171422627131 | Best Fitness: 0.8287599826456492 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.7920496495002349 | Best Fitness: 0.829861466660715 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7878032902311597 | Best Fitness: 0.8312204420925482 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7904349196977261 | Best Fitness: 0.8318195421642918 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7975379541352872 | Best Fitness: 0.8323732584476583 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7950329625154106 | Best Fitness: 0.832649834977736 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7928127537224084 | Best Fitness: 0.8328640792576035 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7951178844892471 | Best Fitness: 0.8330596884536415 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.7952594492807501 | Best Fitness: 0.8330979906842729 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7949417761687542 | Best Fitness: 0.8331171141099483 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7956633458628122 | Best Fitness: 0.8331285021903742 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7887273065261209 | Best Fitness: 0.8331285021903742 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7901563008026361 | Best Fitness: 0.8331444732581464 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7987391005959416 | Best Fitness: 0.8331736066402814 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7891939252637857 | Best Fitness: 0.8332177843079651 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7855379469770714 | Best Fitness: 0.83324192610615 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7946911623275554 | Best Fitness: 0.8332853504442298 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7888187295506964 | Best Fitness: 0.8332959600735188 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7949188431726449 | Best Fitness: 0.8332999783962459 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7916675639580285 | Best Fitness: 0.8333010158976101 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7970045078680521 | Best Fitness: 0.833306549220461 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7945376765485613 | Best Fitness: 0.8333077866172421 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7946831535003449 | Best Fitness: 0.8333077866172421 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7970395654806937 | Best Fitness: 0.8333077866172421 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7910364141276012 | Best Fitness: 0.8333079212578092 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7878634941704022 | Best Fitness: 0.8333079212578092 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7922704967605938 | Best Fitness: 0.8333079212578092 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7944756416020334 | Best Fitness: 0.8333116807282285 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7913234825850763 | Best Fitness: 0.8333116807282285 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7904864455623816 | Best Fitness: 0.83331251768799 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7923615676206606 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7964418018313616 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7949293674977845 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7957079116650282 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7949459674810321 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7955707300943452 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7941362497188014 | Best Fitness: 0.8333171463367154 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7967477148201125 | Best Fitness: 0.8333190109242223 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7897964049545405 | Best Fitness: 0.8333230793114189 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7922943364204759 | Best Fitness: 0.8333238824789752 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7929453395824015 | Best Fitness: 0.8333238824789752 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7906080559380811 | Best Fitness: 0.8333238824789752 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7923523687534343 | Best Fitness: 0.833323929834096 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.796730978009843 | Best Fitness: 0.8333239900259813 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.785842271371291 | Best Fitness: 0.8333239900259813 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7985538083898994 | Best Fitness: 0.8333239900259813 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7889888320638317 | Best Fitness: 0.8333239900259813 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.791125505939151 | Best Fitness: 0.8333239900259813 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7984043828709169 | Best Fitness: 0.8333239900259813 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.7965044076378074 | Best Fitness: 0.8333244915690098 | Population Length: 200
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7965044076378074  ---  Best Overall Fitness: 0.8333244915690098
+------------------------------------------------
+Execution 7
+Generation 1 | Average Generation Fitness: 0.7537134257397945 | Best Fitness: 0.8051841621442134 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7762793631172016 | Best Fitness: 0.8188759825072326 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7833690194974302 | Best Fitness: 0.8251238173977485 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.7904441837628278 | Best Fitness: 0.8294571582419987 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7911156896462037 | Best Fitness: 0.8308956681014511 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7914626158577263 | Best Fitness: 0.8312307817542913 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7841866199467717 | Best Fitness: 0.8318352688233728 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.788000022580406 | Best Fitness: 0.8320194981111688 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7960466069141904 | Best Fitness: 0.8322410352556259 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7950644042904913 | Best Fitness: 0.8324132146838253 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.788388018135217 | Best Fitness: 0.8327243740506237 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7917583949476031 | Best Fitness: 0.832926661890154 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7916741037910032 | Best Fitness: 0.8330620242597945 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7925110812242001 | Best Fitness: 0.8330620242597945 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7933370657523733 | Best Fitness: 0.8330798964242137 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7906169635884599 | Best Fitness: 0.8330798964242137 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7911279593376243 | Best Fitness: 0.8330803820991539 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.792789977157757 | Best Fitness: 0.8331027471345269 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7935641541815319 | Best Fitness: 0.8331823210242033 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.789998106662558 | Best Fitness: 0.8332269993202323 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.789167695920833 | Best Fitness: 0.8332485380464567 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7928674523610714 | Best Fitness: 0.8332737682236541 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7958627101291856 | Best Fitness: 0.8332737682236541 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7926699808902695 | Best Fitness: 0.8332752988773744 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7898538255161403 | Best Fitness: 0.8332752988773744 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.794428255126789 | Best Fitness: 0.8332752988773744 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7948791677130097 | Best Fitness: 0.8332975962508857 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7956811434131033 | Best Fitness: 0.8332975962508857 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7943242862303557 | Best Fitness: 0.8332975962508857 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7955541680554868 | Best Fitness: 0.8333050224489754 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7959579800390726 | Best Fitness: 0.8333085506067821 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7932471942368642 | Best Fitness: 0.8333085506067821 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7969655539362506 | Best Fitness: 0.833312280246191 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7898308307625718 | Best Fitness: 0.8333152094285138 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7921740564171631 | Best Fitness: 0.8333152094285138 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7937193394132172 | Best Fitness: 0.8333165062997664 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7904734869980921 | Best Fitness: 0.833321151001268 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7951751911024679 | Best Fitness: 0.8333229869633595 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7964382550348076 | Best Fitness: 0.8333244657215867 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7933716240099646 | Best Fitness: 0.8333244657215867 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7966298637138284 | Best Fitness: 0.8333259385057566 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7917613411806217 | Best Fitness: 0.8333259385057566 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7950518442195998 | Best Fitness: 0.8333259385057566 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7939477000617416 | Best Fitness: 0.8333259385057566 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7926635862324531 | Best Fitness: 0.8333259385057566 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7923557467287644 | Best Fitness: 0.8333260259741462 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7943623049307638 | Best Fitness: 0.8333260259741462 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7953877478434292 | Best Fitness: 0.8333260259741462 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7904970014058098 | Best Fitness: 0.8333260259741462 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.7973582952887222 | Best Fitness: 0.8333260259741462 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7925650452114406 | Best Fitness: 0.8333260259741462 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.79558338301174 | Best Fitness: 0.833326481462187 | Population Length: 200
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.79558338301174  ---  Best Overall Fitness: 0.833326481462187
+------------------------------------------------
+Execution 8
+Generation 1 | Average Generation Fitness: 0.7574181355856013 | Best Fitness: 0.8121430121742659 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7776385211320707 | Best Fitness: 0.8160395845124008 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7860920606756503 | Best Fitness: 0.8231389915757118 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.785676405226328 | Best Fitness: 0.8265220236588404 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7896426537017213 | Best Fitness: 0.827642711706185 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7870607100859515 | Best Fitness: 0.8297338460688168 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7926854609766941 | Best Fitness: 0.8308091071048284 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.793554232380904 | Best Fitness: 0.8308893553892017 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7897032115061877 | Best Fitness: 0.8309517837332494 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7924727494085212 | Best Fitness: 0.8317278830070327 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.7921585180973914 | Best Fitness: 0.8320375084925095 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7946686152024688 | Best Fitness: 0.8322445572402818 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7959310206967614 | Best Fitness: 0.8327549655441222 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7944577601982458 | Best Fitness: 0.8329396745323191 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7913838142858818 | Best Fitness: 0.8329477225580227 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7967733129844237 | Best Fitness: 0.8329722347831334 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7914685586263643 | Best Fitness: 0.8330436015317487 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7923767534700087 | Best Fitness: 0.8331043711827282 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7919198336772085 | Best Fitness: 0.8331082303944405 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7992677537719692 | Best Fitness: 0.833130765075355 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7931154534211576 | Best Fitness: 0.8331433137134022 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7967194113831743 | Best Fitness: 0.833174554948047 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7991625484858337 | Best Fitness: 0.8332139012563087 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7901533685195214 | Best Fitness: 0.8332492821971159 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7916242188937914 | Best Fitness: 0.8332492821971159 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7924171006217362 | Best Fitness: 0.8332572118215223 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7988831799409772 | Best Fitness: 0.83328970000644 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7903217850600514 | Best Fitness: 0.83328970000644 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7949595926050849 | Best Fitness: 0.833294320490114 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7909271701952377 | Best Fitness: 0.833294320490114 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7909351791329877 | Best Fitness: 0.8332960088112421 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7909844447074919 | Best Fitness: 0.8333006575619458 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7922374875752386 | Best Fitness: 0.8333021804825559 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7953057933276555 | Best Fitness: 0.8333021804825559 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7940094062810888 | Best Fitness: 0.8333021804825559 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7953832229966252 | Best Fitness: 0.8333109755296602 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7937110925217636 | Best Fitness: 0.8333109755296602 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.7972200549033164 | Best Fitness: 0.8333109755296602 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7898487006097035 | Best Fitness: 0.8333109755296602 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7980927297871403 | Best Fitness: 0.8333109755296602 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7944767398707124 | Best Fitness: 0.8333132775142911 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.8001201981580934 | Best Fitness: 0.8333132775142911 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7954443176199831 | Best Fitness: 0.8333132775142911 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7960296063933143 | Best Fitness: 0.8333132775142911 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7947107172855797 | Best Fitness: 0.8333132775142911 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.795162945469529 | Best Fitness: 0.8333132775142911 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7978559120027928 | Best Fitness: 0.8333134200490354 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7954756473112287 | Best Fitness: 0.8333141471375058 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7917324693273682 | Best Fitness: 0.8333150279191485 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.797558496322353 | Best Fitness: 0.8333154481625914 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.795729292717759 | Best Fitness: 0.8333154481625914 | Population Length: 200
+------------------------------------------------
+Total Generations: 51
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.795729292717759  ---  Best Overall Fitness: 0.8333154481625914
+------------------------------------------------
+Execution 9
+Generation 1 | Average Generation Fitness: 0.7410709899812986 | Best Fitness: 0.8084642996008126 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7704018964574473 | Best Fitness: 0.8206233229618655 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.788000584421106 | Best Fitness: 0.8256309595830456 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.7917820901571531 | Best Fitness: 0.8301075313426519 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7964513032394646 | Best Fitness: 0.8319874864455197 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7904886194037527 | Best Fitness: 0.832391332567346 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7890171432334082 | Best Fitness: 0.8324347060728396 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7959006023928192 | Best Fitness: 0.832636942186791 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.793006915742377 | Best Fitness: 0.8327827270585346 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7955205769467483 | Best Fitness: 0.8329263871883368 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.7962703042579843 | Best Fitness: 0.8331072614292084 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7984066450022382 | Best Fitness: 0.8331575381598824 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7911044606774057 | Best Fitness: 0.8331575381598824 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7913097437463397 | Best Fitness: 0.8332062156521265 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7924078456728004 | Best Fitness: 0.8332075698931118 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7924764164127288 | Best Fitness: 0.8332144536001365 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.789952584664611 | Best Fitness: 0.83323153113902 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7917833083082345 | Best Fitness: 0.833249225542934 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7947624423268436 | Best Fitness: 0.8332637680494902 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.797499540819731 | Best Fitness: 0.8332637680494902 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7882758387163196 | Best Fitness: 0.8332759590755819 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7941650813810658 | Best Fitness: 0.8332786878727593 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7931381442552028 | Best Fitness: 0.8332818514641603 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7899200459663366 | Best Fitness: 0.8332843718157016 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7954654871533764 | Best Fitness: 0.8332863215658719 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7913347609390817 | Best Fitness: 0.833286875892094 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.789979189407637 | Best Fitness: 0.8332929654325106 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7968666027048836 | Best Fitness: 0.8332961593102849 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7939243285948646 | Best Fitness: 0.8332968308736787 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7885133600008619 | Best Fitness: 0.8333247906453404 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7923498462042103 | Best Fitness: 0.833326334255161 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.789865279014925 | Best Fitness: 0.833326334255161 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7932302789948161 | Best Fitness: 0.833326334255161 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7959560689368702 | Best Fitness: 0.8333266442925762 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.790462536102705 | Best Fitness: 0.8333266442925762 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.7858805324737537 | Best Fitness: 0.8333266442925762 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.7948025144677723 | Best Fitness: 0.8333269380568119 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.793764262698604 | Best Fitness: 0.8333273702984377 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7930016375431934 | Best Fitness: 0.8333273702984377 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7963140503833037 | Best Fitness: 0.8333277530097328 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7936196811286158 | Best Fitness: 0.8333277530097328 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.789160651263447 | Best Fitness: 0.8333277530097328 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7896353898806736 | Best Fitness: 0.8333277588174919 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7899387668042297 | Best Fitness: 0.8333284349041732 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7956546318343327 | Best Fitness: 0.8333284402017126 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7965175291061982 | Best Fitness: 0.8333284402017126 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7936496373413745 | Best Fitness: 0.8333284948673876 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7955343556317024 | Best Fitness: 0.8333284948673876 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7933644445153308 | Best Fitness: 0.8333284948673876 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.7907347099080901 | Best Fitness: 0.8333286639444182 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7903747814603745 | Best Fitness: 0.8333286639444182 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.7908665639427811 | Best Fitness: 0.8333290205033932 | Population Length: 200
+------------------------------------------------
+Total Generations: 52
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7908665639427811  ---  Best Overall Fitness: 0.8333290205033932
+------------------------------------------------
+Execution 10
+Generation 1 | Average Generation Fitness: 0.7359118509735272 | Best Fitness: 0.8015628597029708 | Population Length: 200
+Generation 2 | Average Generation Fitness: 0.7749756418984434 | Best Fitness: 0.8108602690137623 | Population Length: 200
+Generation 3 | Average Generation Fitness: 0.7806234989733203 | Best Fitness: 0.8209656021806249 | Population Length: 200
+Generation 4 | Average Generation Fitness: 0.7825943854338325 | Best Fitness: 0.8259201290159344 | Population Length: 200
+Generation 5 | Average Generation Fitness: 0.7900227820611938 | Best Fitness: 0.8281183499595918 | Population Length: 200
+Generation 6 | Average Generation Fitness: 0.7909186098947625 | Best Fitness: 0.829519097170227 | Population Length: 200
+Generation 7 | Average Generation Fitness: 0.7928626484489688 | Best Fitness: 0.8311042558024136 | Population Length: 200
+Generation 8 | Average Generation Fitness: 0.7918905349968014 | Best Fitness: 0.8314310446538996 | Population Length: 200
+Generation 9 | Average Generation Fitness: 0.7899441041730135 | Best Fitness: 0.83147836917943 | Population Length: 200
+Generation 10 | Average Generation Fitness: 0.7965068452419947 | Best Fitness: 0.8320309705471918 | Population Length: 200
+Generation 11 | Average Generation Fitness: 0.7997507323105352 | Best Fitness: 0.8321106399586482 | Population Length: 200
+Generation 12 | Average Generation Fitness: 0.7942313409699541 | Best Fitness: 0.832470083390976 | Population Length: 200
+Generation 13 | Average Generation Fitness: 0.7979787377027715 | Best Fitness: 0.832564497678784 | Population Length: 200
+Generation 14 | Average Generation Fitness: 0.7957550089748203 | Best Fitness: 0.8326187705303255 | Population Length: 200
+Generation 15 | Average Generation Fitness: 0.7940006560929875 | Best Fitness: 0.8326263459458824 | Population Length: 200
+Generation 16 | Average Generation Fitness: 0.7926534597754494 | Best Fitness: 0.8331603353153839 | Population Length: 200
+Generation 17 | Average Generation Fitness: 0.7969937340369517 | Best Fitness: 0.8331603353153839 | Population Length: 200
+Generation 18 | Average Generation Fitness: 0.7908764874951089 | Best Fitness: 0.8331825972886628 | Population Length: 200
+Generation 19 | Average Generation Fitness: 0.7891277653523862 | Best Fitness: 0.8331825972886628 | Population Length: 200
+Generation 20 | Average Generation Fitness: 0.7928910594164976 | Best Fitness: 0.8331851538800756 | Population Length: 200
+Generation 21 | Average Generation Fitness: 0.7949198536247498 | Best Fitness: 0.83320021952877 | Population Length: 200
+Generation 22 | Average Generation Fitness: 0.7963423702669001 | Best Fitness: 0.8332077008593174 | Population Length: 200
+Generation 23 | Average Generation Fitness: 0.7876200437497453 | Best Fitness: 0.8332391555335433 | Population Length: 200
+Generation 24 | Average Generation Fitness: 0.7949469343436703 | Best Fitness: 0.8332658357365235 | Population Length: 200
+Generation 25 | Average Generation Fitness: 0.7964320204017035 | Best Fitness: 0.8332658357365235 | Population Length: 200
+Generation 26 | Average Generation Fitness: 0.7942447593976284 | Best Fitness: 0.8332658357365235 | Population Length: 200
+Generation 27 | Average Generation Fitness: 0.7908942877025936 | Best Fitness: 0.8332826991493779 | Population Length: 200
+Generation 28 | Average Generation Fitness: 0.7993507733287437 | Best Fitness: 0.8332826991493779 | Population Length: 200
+Generation 29 | Average Generation Fitness: 0.7988343610783544 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 30 | Average Generation Fitness: 0.7942452651218779 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 31 | Average Generation Fitness: 0.7865623172001738 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 32 | Average Generation Fitness: 0.7934335974824012 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 33 | Average Generation Fitness: 0.7946200832172586 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 34 | Average Generation Fitness: 0.7907456004793191 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 35 | Average Generation Fitness: 0.7899066016707661 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 36 | Average Generation Fitness: 0.792782559981597 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 37 | Average Generation Fitness: 0.797973730712915 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 38 | Average Generation Fitness: 0.800278706433107 | Best Fitness: 0.8332952642861151 | Population Length: 200
+Generation 39 | Average Generation Fitness: 0.7961742100628613 | Best Fitness: 0.8332963111217396 | Population Length: 200
+Generation 40 | Average Generation Fitness: 0.7950105293907292 | Best Fitness: 0.8332963111217396 | Population Length: 200
+Generation 41 | Average Generation Fitness: 0.7992068011038502 | Best Fitness: 0.8332963111217396 | Population Length: 200
+Generation 42 | Average Generation Fitness: 0.7900124948167412 | Best Fitness: 0.8332963111217396 | Population Length: 200
+Generation 43 | Average Generation Fitness: 0.7907467965863662 | Best Fitness: 0.8332963111217396 | Population Length: 200
+Generation 44 | Average Generation Fitness: 0.7906366875088975 | Best Fitness: 0.8332980288426612 | Population Length: 200
+Generation 45 | Average Generation Fitness: 0.7913748329921652 | Best Fitness: 0.8332985829616816 | Population Length: 200
+Generation 46 | Average Generation Fitness: 0.7996591167044946 | Best Fitness: 0.8332985829616816 | Population Length: 200
+Generation 47 | Average Generation Fitness: 0.7929792395505088 | Best Fitness: 0.8332985829616816 | Population Length: 200
+Generation 48 | Average Generation Fitness: 0.7890104173567026 | Best Fitness: 0.8332985829616816 | Population Length: 200
+Generation 49 | Average Generation Fitness: 0.7956417585851397 | Best Fitness: 0.8333242036655657 | Population Length: 200
+Generation 50 | Average Generation Fitness: 0.8000214113816311 | Best Fitness: 0.833324567519561 | Population Length: 200
+Generation 51 | Average Generation Fitness: 0.7931686961366172 | Best Fitness: 0.833324567519561 | Population Length: 200
+Generation 52 | Average Generation Fitness: 0.7952956165109708 | Best Fitness: 0.833324567519561 | Population Length: 200
+Generation 53 | Average Generation Fitness: 0.7929640780342863 | Best Fitness: 0.833325033348054 | Population Length: 200
+------------------------------------------------
+Total Generations: 53
+Total Population: 200   ---   Mutation Rate: 0.1  ---  Crossover Probability: 0.6
+Average Fitness: 0.7929640780342863  ---  Best Overall Fitness: 0.833325033348054
+------------------------------------------------
+Best Fitnesses mean: 0.8333266121094978
+Total Generations mean: 51.9
+------------------------------------------------
