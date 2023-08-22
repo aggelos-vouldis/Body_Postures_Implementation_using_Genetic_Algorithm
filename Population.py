@@ -252,6 +252,7 @@ class Population():
             f.write(message)
 
 
+# For testing purposes
 if __name__ == '__main__':
     target = Target()
     pop = Population(

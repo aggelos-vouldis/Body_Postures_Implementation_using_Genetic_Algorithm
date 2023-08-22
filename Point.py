@@ -184,6 +184,7 @@ class TargetPoints():
         return len(self.p1) + len(self.p2) + len(self.p3) + len(self.p4)
 
 
+# For testing purposes
 if __name__ == '__main__':
     tp1 = TargetPoints(
         Point(1, 1, 1),

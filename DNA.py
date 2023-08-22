@@ -123,6 +123,7 @@ class DNA():
         return str(self.genes)
 
 
+# For testing purposes
 if __name__ == '__main__':
     dna1 = DNA()
     dna2 = DNA()

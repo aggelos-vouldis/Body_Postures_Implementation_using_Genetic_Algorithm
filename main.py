@@ -4,15 +4,19 @@ from numpy import mean
 
 
 # number of times to run the genetic algorithm
-n_runs = 1
+n_runs = 10
 
-LOGGING = True  # Boolean to log information
+LOGGING = False  # Boolean to log information
 DEBUG_INFO = False  # Boolean to show information
 
 # Basic Variables
-max_pop = 20
-crossover_probability = 0.1
-mutation_rate = 0.01
+max_pop = 200
+crossover_probability = 0.6
+mutation_rate = 0.1
+
+
+best_fitness_values = list()
+generation_values = list()
 
 selection_types = [{
     'type': 0,
@@ -48,7 +52,7 @@ def write_to_file(filename, message):
         f.write(message)
 
 
-def run_GA(filename: str, execution_num=0):
+def run_GA(target, picked_crossover, picked_selection, filename: str, execution_num=0, ):
     if LOGGING:
         write_to_file(filename, f"\nExecution {execution_num + 1}\n")
     if DEBUG_INFO:
@@ -65,8 +69,6 @@ def run_GA(filename: str, execution_num=0):
         show_debug_info=LOGGING,
         crossover_probability=crossover_probability
     )
-
-    print(pop)
 
     while True:
         # Generate Mating Pool
@@ -106,39 +108,46 @@ def run_GA(filename: str, execution_num=0):
     print(f"Execution { execution_num + 1 } ENDED")
 
 
-picked_selection = selection_types[0]
-picked_crossover = crossover_types[0]
+def main():
+    picked_selection = selection_types[0]
+    picked_crossover = crossover_types[0]
 
-print(
-    f"picked_selection: {picked_selection['name']} - picked_crossover: {picked_crossover['name']} - max_pop: {max_pop} - crossover_probability: {crossover_probability} - mutation_rate: {mutation_rate}")
+    print(
+        f"picked_selection: {picked_selection['name']} - picked_crossover: {picked_crossover['name']} - max_pop: {max_pop} - crossover_probability: {crossover_probability} - mutation_rate: {mutation_rate}")
 
-# setup Logger
-filename = f"logs/log-{picked_selection['name']}-{picked_crossover['name']}-{max_pop}-{crossover_probability}_{mutation_rate}.log"
+    # setup Logger
+    filename = f"logs/log-{picked_selection['name']}-{picked_crossover['name']}-{max_pop}-{crossover_probability}-{mutation_rate}.log"
 
-target = Target()
-if LOGGING:
-    write_to_file(
-        filename, f"Target: \n{target.get_target()}\n")
+    target = Target()
+    if LOGGING:
+        write_to_file(
+            filename, f"Target: \n{target.get_target()}\n")
 
-best_fitness_values = list()
-generation_values = list()
+    print("-------------------------- STARTING --------------------------")
 
-print("-------------------------- STARTING --------------------------")
+    # run the genetic algorithm
+    for i in range(n_runs):
+        run_GA(
+            filename=filename,
+            execution_num=i,
+            target=target,
+            picked_crossover=picked_crossover,
+            picked_selection=picked_selection
+        )
 
-# run the genetic algorithm
-for i in range(n_runs):
-    run_GA(filename, i)
+    if LOGGING:
+        write_to_file(
+            filename, f"\nBest Fitnesses mean: {mean(best_fitness_values)}\n")
+        write_to_file(
+            filename, f"Total Generations mean: {mean(generation_values)}\n")
+        write_to_file(
+            filename, "------------------------------------------------")
 
-if LOGGING:
-    write_to_file(
-        filename, f"\nBest Fitnesses mean: {mean(best_fitness_values)}\n")
-    write_to_file(
-        filename, f"Total Generations mean: {mean(generation_values)}\n")
-    write_to_file(
-        filename, "------------------------------------------------")
+    print(f"-------------------------- FINISHED --------------------------")
+    print(f"best fitnesses mean: {mean(best_fitness_values)}")
+    print(f"generations value mean: {mean(generation_values)}")
+    print("--------------------------------------------------------------")
 
-print(
-    f"""-------------------------- FINISHED --------------------------
-best fitnesses mean: {mean(best_fitness_values)}
-generations value mean: {mean(generation_values)}
-------------------------------------------------""")
+
+if __name__ == "__main__":
+    main()

@@ -99,13 +99,6 @@ def calculate_targets():
     standing_mean_values = calculate_mean_values(standing_pos)
     sittingDown_mean_values = calculate_mean_values(sittingDown_pos)
 
-    if DEBUG_INFO:
-        print(sitting_mean_values)
-        print(walking_mean_values)
-        print(standingUp_mean_values)
-        print(standing_mean_values)
-        print(sittingDown_mean_values)
-
     return sitting_mean_values, walking_mean_values, standingUp_mean_values, standing_mean_values, sittingDown_mean_values
 
 
@@ -118,8 +111,7 @@ def calculate_mean_values(df: pd.DataFrame):
     return temp_list
 
 
-DEBUG_INFO = False
-
+# For testing purposes
 if __name__ == '__main__':
     target = Target()
 
