@@ -83,7 +83,7 @@ def transform_data(data):
 
 def calculate_targets():
     sitting_pos, walking_pos, standingUp_pos, standing_pos, sittingDown_pos = read_csv_make_changes()
-
+    print(sitting_pos)
     # transform data with the Quantile Transformer
     sitting_pos = transform_data(sitting_pos)
     walking_pos = transform_data(walking_pos)
@@ -115,8 +115,8 @@ def calculate_mean_values(df: pd.DataFrame):
 if __name__ == '__main__':
     target = Target()
 
-    print(f"Target:\n{target.get_target()}\n")
+    # print(f"Target:\n{target.get_target()}\n")
 
-    print("All the other posible positions:\n")
-    for other_value in target.get_other_position_values():
-        print(f"{other_value}\n")
+    # print("All the other posible positions:\n")
+    # for other_value in target.get_other_position_values():
+    #     print(f"{other_value}\n")
